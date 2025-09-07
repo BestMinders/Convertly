@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'core/theme/app_theme.dart';
 import 'viewmodels/converter_viewmodel.dart';
+import 'views/splash_screen.dart';
 import 'views/home_screen.dart';
 import 'views/conversion_screen.dart';
 import 'views/history_screen.dart';
@@ -33,8 +34,9 @@ class UniCalcApp extends StatelessWidget {
                 theme: AppTheme.lightTheme,
                 darkTheme: AppTheme.darkTheme,
                 themeMode: viewModel.isDarkMode ? ThemeMode.dark : ThemeMode.light,
-                initialRoute: '/',
+                initialRoute: '/splash',
                 routes: {
+                  '/splash': (context) => const SplashScreen(),
                   '/': (context) => const HomeScreen(),
                   '/conversion': (context) => const ConversionScreen(),
                   '/history': (context) => const HistoryScreen(),

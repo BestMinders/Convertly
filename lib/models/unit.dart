@@ -26,3 +26,4 @@ class Unit {
   @override
   int get hashCode => name.hashCode ^ symbol.hashCode ^ category.hashCode;
 }
+

@@ -192,3 +192,4 @@ class ConverterViewModel extends ChangeNotifier {
     return '1 ${_fromUnit!.symbol} = ${rate.toStringAsFixed(6)} ${_toUnit!.symbol}';
   }
 }
+

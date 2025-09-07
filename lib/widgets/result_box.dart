@@ -23,7 +23,7 @@ class ResultBox extends StatelessWidget {
     final theme = Theme.of(context);
     
     return Card(
-      elevation: 3,
+      elevation: 10,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.all(20),

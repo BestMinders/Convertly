@@ -27,3 +27,4 @@ class Category {
   @override
   int get hashCode => name.hashCode ^ id.hashCode;
 }
+

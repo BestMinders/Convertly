@@ -1,4 +1,4 @@
-package com.convetly.convertly
+package com.convertall.convertly
 
 import io.flutter.embedding.android.FlutterActivity
 

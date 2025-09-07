@@ -29,24 +29,28 @@ class AppTheme {
         error: Color(0xFFB3261E),
         onError: Color(0xFFFFFFFF),
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: lightSurface,
         foregroundColor: lightOnSurface,
-        elevation: 0,
+        elevation: 8,
+        shadowColor: Colors.black.withValues(alpha: 0.3),
         centerTitle: true,
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
           color: lightOnSurface,
           fontSize: 20,
           fontWeight: FontWeight.w600,
         ),
+        surfaceTintColor: primaryBlue.withValues(alpha: 0.1),
       ),
       cardTheme: CardThemeData(
         color: lightSurface,
-        elevation: 2,
+        elevation: 8,
+        shadowColor: Colors.black.withValues(alpha: 0.2),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(16),
         ),
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        surfaceTintColor: primaryBlue.withValues(alpha: 0.05),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -138,24 +142,28 @@ class AppTheme {
         error: Color(0xFFF2B8B5),
         onError: Color(0xFF601410),
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: darkSurface,
         foregroundColor: darkOnSurface,
-        elevation: 0,
+        elevation: 8,
+        shadowColor: Colors.black.withValues(alpha: 0.5),
         centerTitle: true,
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
           color: darkOnSurface,
           fontSize: 20,
           fontWeight: FontWeight.w600,
         ),
+        surfaceTintColor: primaryBlue.withValues(alpha: 0.1),
       ),
       cardTheme: CardThemeData(
         color: darkSurface,
-        elevation: 2,
+        elevation: 8,
+        shadowColor: Colors.black.withValues(alpha: 0.4),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(16),
         ),
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        surfaceTintColor: primaryBlue.withValues(alpha: 0.05),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(

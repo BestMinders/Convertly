@@ -53,12 +53,11 @@ class HomeScreen extends StatelessWidget {
               // Categories grid
               Expanded(
                 child: GridView.builder(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    childAspectRatio: 1.1,
-                    crossAxisSpacing: 16,
-                    mainAxisSpacing: 16,
+                   // childAspectRatio:  0.8,
+                    mainAxisSpacing: 10,
                   ),
                   itemCount: viewModel.categories.length,
                   itemBuilder: (context, index) {
@@ -104,3 +103,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+

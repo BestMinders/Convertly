@@ -18,12 +18,12 @@ class CategoryCard extends StatelessWidget {
     final theme = Theme.of(context);
     
     return Card(
-      elevation: isSelected ? 4 : 2,
+      elevation: isSelected ? 12 : 8,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(12),
         child: Container(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -37,7 +37,7 @@ class CategoryCard extends StatelessWidget {
                 ),
                 child: Icon(
                   category.icon,
-                  size: 32,
+                  size: 28,
                   color: isSelected 
                       ? theme.colorScheme.primary
                       : theme.colorScheme.onSurface.withOpacity(0.7),
@@ -73,3 +73,4 @@ class CategoryCard extends StatelessWidget {
     );
   }
 }
+
